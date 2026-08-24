@@ -10,6 +10,7 @@
    ============================================================ */
 
 :root{
+  --skin:url("data:image/png;base64,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");
   --ground:#060B09;
   --ground-2:#08110D;
   --surface:#0C1613;
@@ -191,7 +192,17 @@ section{padding-block:clamp(4.5rem,9vw,8rem);}
 }
 @keyframes drift{from{transform:translateX(-1.5%) scaleY(1);}to{transform:translateX(1.5%) scaleY(1.04);}}
 
-.hero-in{position:relative;z-index:3;}
+.hero-in{
+  position:relative;z-index:3;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:clamp(1.5rem,4vw,4rem);
+  align-items:center;
+}
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;}
+  .hero-fig{display:none;}
+}
 .hero-eyebrow{
   display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
   margin-bottom:2.2rem;
@@ -511,6 +522,7 @@ blockquote cite{
 .two{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:clamp(2rem,5vw,4rem);
+  align-items:start;
 }
 .trait-card p{margin:0 0 1.2rem;color:var(--text-2);}
 .trait-card p:last-child{margin-bottom:0;}
@@ -524,7 +536,11 @@ blockquote cite{
   padding:.32rem .6rem;color:var(--muted);
 }
 
-.phys-list{display:grid;gap:1.15rem;margin-top:.4rem;}
+.phys-list{
+  display:grid;gap:1.15rem 2.6rem;margin-top:1.4rem;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+.aptitudes{margin-top:clamp(2.5rem,5vw,4rem);}
 .bar-row .top{
   display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
   font-family:"IBM Plex Mono",monospace;font-size:.66rem;
@@ -571,6 +587,56 @@ footer .creds{
 }
 footer .creds b{color:var(--givre);font-weight:500;}
 
+/* ---------- figure du personnage ---------- */
+.fig{
+  background-image:var(--skin);
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  background-size:contain;
+  image-rendering:pixelated;
+  aspect-ratio:200/445;
+  position:relative;
+}
+.fig::after{
+  content:"";position:absolute;inset:-14% -22% -6%;z-index:-1;
+  background:radial-gradient(50% 46% at 50% 54%,rgba(155,242,208,.16),transparent 68%);
+}
+
+.hero-fig{
+  width:clamp(160px,20vw,252px);
+  justify-self:end;
+  filter:drop-shadow(0 26px 34px rgba(0,0,0,.6)) drop-shadow(0 0 22px rgba(155,242,208,.16));
+  animation:hover 9s ease-in-out infinite;
+}
+@keyframes hover{0%,100%{transform:translateY(0);}50%{transform:translateY(-11px);}}
+
+.fig-card{
+  border:1px solid var(--bark);
+  background:linear-gradient(180deg,var(--surface),rgba(6,11,9,.6));
+  padding:2rem 1.5rem 1.4rem;
+  display:flex;flex-direction:column;align-items:center;gap:1.3rem;
+}
+.fig-card .fig{width:min(100%,236px);filter:drop-shadow(0 16px 24px rgba(0,0,0,.55));}
+.fig-card .cap{
+  font-family:"IBM Plex Mono",monospace;font-size:.6rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--faint);text-align:center;line-height:1.8;
+}
+.fig-card .cap b{color:var(--givre);font-weight:500;}
+
+.vitals{
+  margin-top:1.6rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:1px;background:var(--bark);border:1px solid var(--bark);
+}
+.vitals div{background:var(--surface);padding:.95rem 1rem;}
+.vitals dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.56rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--faint);
+}
+.vitals dd{
+  margin:.4rem 0 0;font-family:"IBM Plex Mono",monospace;
+  font-size:.9rem;color:var(--text);font-variant-numeric:tabular-nums;
+}
+
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
 .rv.in{opacity:1;transform:none;}
@@ -605,6 +671,7 @@ footer .creds b{color:var(--givre);font-weight:500;}
   </div>
 
   <div class="wrap hero-in">
+    <div>
     <div class="hero-eyebrow">
       <span class="bar"></span>
       <span class="label">Candidature — Shinoda RP</span>
@@ -622,12 +689,16 @@ footer .creds b{color:var(--givre);font-weight:500;}
     </p>
 
     <div class="hero-meta">
-      <span class="chip">Clan Senju</span>
+      <span class="chip">Konoha</span>
       <span class="chip">Genin</span>
       <span class="chip">Ninjutsu médical</span>
       <span class="chip fire">Katon</span>
+      <span class="chip">Doton</span>
       <span class="chip frost">Le Givre</span>
     </div>
+    </div>
+
+    <div class="fig hero-fig" role="img" aria-label="Hikari Senju"></div>
   </div>
 
   <div class="scroll-cue" aria-hidden="true">
@@ -695,17 +766,17 @@ footer .creds b{color:var(--givre);font-weight:500;}
 
     <dl class="id-grid rv">
       <div class="id-cell"><dt>Prénom</dt><dd>Hikari</dd></div>
-      <div class="id-cell"><dt>Nom</dt><dd>Senju</dd></div>
+      <div class="id-cell"><dt>Nom</dt><dd>Senju<small>Branche modeste, en bordure de forêt</small></dd></div>
       <div class="id-cell"><dt>Âge</dt><dd>12 ans</dd></div>
       <div class="id-cell"><dt>Village</dt><dd>Konoha</dd></div>
       <div class="id-cell"><dt>Grade</dt><dd>Genin</dd></div>
-      <div class="id-cell"><dt>Clan</dt><dd>Senju<small>Branche modeste, en bordure de forêt</small></dd></div>
-      <div class="id-cell warm"><dt>Nature de chakra</dt><dd>Katon<small>Apprise pour se réchauffer les mains, pas pour se battre</small></dd></div>
+      <div class="id-cell warm"><dt>Natures de chakra</dt><dd>Katon · Doton<small>Le feu d'abord, appris pour se réchauffer les mains. La terre est récente et il est encore très mauvais.</small></dd></div>
       <div class="id-cell"><dt>Spécialisation</dt><dd>Ninjutsu médical</dd></div>
-      <div class="id-cell"><dt>Seconde nature</dt><dd>Doton<small>En cours d'acquisition. Il est très mauvais.</small></dd></div>
-      <div class="id-cell"><dt>Religion</dt><dd>Naturanisme<small>Initié comme tous les Senju. Pratiquant, mais discutailleur.</small></dd></div>
+      <div class="id-cell"><dt>Formation</dt><dd>Tsubaki Senju<small>Herboriste du clan. Elle l'a diagnostiqué, puis élevé au milieu de ses racines.</small></dd></div>
+      <div class="id-cell"><dt>Religion</dt><dd>Naturalisme<small>Initié comme tous les Senju. Pratiquant, mais discutailleur.</small></dd></div>
       <div class="id-cell accent"><dt>Particularité</dt><dd>Le Givre<small>Affection du réseau de chakra. 8 cas recensés en deux siècles.</small></dd></div>
       <div class="id-cell"><dt>Surnom</dt><dd>« La Luciole »<small>Donné à l'Académie. Il a mis deux ans à l'accepter.</small></dd></div>
+      <div class="id-cell"><dt>Cérémonie de Plantation</dt><dd>Accomplie<small>Son arbre est un chêne, secteur est de la forêt Senju.</small></dd></div>
     </dl>
   </div>
 </section>
@@ -1026,50 +1097,21 @@ footer .creds b{color:var(--givre);font-weight:500;}
       <div class="fiche-title">
         <h3>Le Givre</h3>
         <p>
-          Porosité chronique du réseau de chakra. Nom populaire, tiré de la lueur pâle qu'on
-          voyait sur les malades avant qu'ils ne meurent l'hiver. La maladie n'a aucune
-          appellation officielle : elle n'existe pas dans le registre médical de Konoha.
+          Le Givre est une maladie rare et dégénérative du réseau de chakra. Le réseau fuit
+          continuellement, faisant perdre à Hikari une grande partie de son chakra avant qu'il
+          puisse l'utiliser. Cela provoque un froid permanent dans les extrémités, des
+          tremblements et, lorsqu'il force, des crises durant lesquelles son corps se bloque
+          progressivement.
+        </p>
+        <p>
+          Chaque crise endommage davantage son réseau de chakra et peut, à terme, entraîner une
+          perte progressive de ses capacités physiques. À ce jour, un seul cas de guérison est
+          connu, attribué à une plante mystérieuse appelée le <em>kagerōsō</em>, dont
+          l'existence n'a jamais été prouvée.
         </p>
       </div>
 
       <div class="fiche-body">
-        <div class="fbox">
-          <h4>Le principe</h4>
-          <p>
-            Chez tout le monde, le chakra circule en circuit fermé et ne sort que là où on
-            décide de le faire sortir. Chez Hikari, les parois de son réseau sont poreuses :
-            ça fuit en continu, partout, comme un seau percé de trous d'aiguille.
-          </p>
-          <p>
-            Il produit un chakra normal pour son âge. Il en perd les deux tiers avant d'avoir
-            pu s'en servir.
-          </p>
-        </div>
-
-        <div class="fbox">
-          <h4>Au quotidien</h4>
-          <p>
-            Mains et pieds froids en permanence. Tremblement fin dans les doigts dès qu'il
-            fatigue. Perte de la sensibilité au chaud sur deux doigts de la main gauche, ce
-            qui l'oblige à tester la température de l'eau avec le coude.
-          </p>
-          <p>Endurance en effort soutenu qui se compte en minutes, pas en heures.</p>
-        </div>
-
-        <div class="fbox">
-          <h4>En crise</h4>
-          <p>
-            S'il force trop longtemps : le froid remonte des mains vers les épaules, les
-            muscles se verrouillent, il tombe. De cinq minutes à une heure, conscient tout du
-            long.
-          </p>
-          <p>
-            Dans le noir complet, une lueur pâle et verdâtre apparaît le long de ses
-            avant-bras, là où le chakra s'échappe. <em>Un ninja qui s'éclaire tout seul est
-            inutilisable en infiltration.</em>
-          </p>
-        </div>
-
         <div class="fbox">
           <h4>Pourquoi il n'est pas à la traîne</h4>
           <p>
@@ -1081,25 +1123,13 @@ footer .creds b{color:var(--givre);font-weight:500;}
         </div>
 
         <div class="fbox">
-          <h4>Pronostic</h4>
+          <h4>La lueur</h4>
           <p>
-            Dégénératif. Chaque crise laisse une petite zone qui ne revient plus. Sur les huit
-            cas retrouvés dans les archives, sept sont morts entre dix-neuf et trente et un
-            ans, après avoir perdu l'usage des mains, puis des jambes.
+            Dans le noir complet, pendant une crise, une lueur pâle et verdâtre apparaît le long
+            de ses avant-bras, là où le chakra s'échappe. C'est de là que vient le nom de la
+            maladie, et le surnom qu'on lui a donné à l'Académie.
           </p>
-        </div>
-
-        <div class="fbox">
-          <h4>Le huitième cas</h4>
-          <p>
-            Une femme, Mizue. Guérie. Une page recopiée aux archives de l'hôpital, à moitié
-            abîmée par l'eau, attribue sa guérison à une décoction bue pendant tout un hiver.
-          </p>
-          <p>
-            Une source plus tardive et douteuse donne un nom à la plante :
-            <em>kagerōsō</em>, l'herbe-mirage. Aucun herbier ne la répertorie. Personne n'en a
-            jamais rapporté d'échantillon.
-          </p>
+          <p><em>Un ninja qui s'éclaire tout seul est inutilisable en infiltration.</em></p>
         </div>
       </div>
 
@@ -1145,9 +1175,9 @@ footer .creds b{color:var(--givre);font-weight:500;}
           <li>
             <span class="mark"></span>
             <div>
-              <b>Apprendre une seconde nature</b>
-              <span class="desc">La terre. Il travaille dessus depuis peu, il est très mauvais,
-              et ça le met dans une humeur épouvantable.</span>
+              <b>Progresser en Doton</b>
+              <span class="desc">Sa seconde nature. Il travaille dessus depuis peu, il est très
+              mauvais, et ça le met dans une humeur épouvantable.</span>
             </div>
           </li>
         </ul>
@@ -1282,30 +1312,51 @@ footer .creds b{color:var(--givre);font-weight:500;}
     </div>
 
     <div class="two">
-      <div class="rv">
-        <div class="portrait">
-          <p>
-            Petit pour son âge, <strong>1m41</strong>, maigre, avec cette maigreur nerveuse des
-            enfants qui ne tiennent pas en place. Cheveux noirs à reflets vert sombre, coupés
-            court et mal parce qu'il s'en charge lui-même. Yeux vert pâle. Peau claire, marbrée
-            de plaques plus pâles et plus froides le long des avant-bras, visibles à l'œil nu,
-            tièdes nulle part.
-          </p>
-          <p>
-            Il porte un haori vert mousse trop grand, hérité, manches roulées et attachées aux
-            coudes pour dégager les mains, des mitaines qu'il ne quitte presque jamais, et une
-            sacoche médicale à la hanche droite qui contient toujours plus de choses qu'elle ne
-            devrait. Bandeau frontal autour du bras gauche. Deux carnets dans la doublure : un
-            pour les cas, un pour lui.
-          </p>
-          <p>
-            Et dans le noir absolu, quand il a trop tiré sur ses réserves, on le voit.
-          </p>
-        </div>
+      <div class="fig-card rv">
+        <div class="fig" role="img" aria-label="Hikari Senju, rendu de son apparence"></div>
+        <span class="cap">Hikari Senju<br><b>12 ans — 1,41 m</b></span>
       </div>
 
       <div class="rv">
-        <div class="phys-list" id="bars">
+        <div class="portrait">
+          <p>
+            Un visage encore complètement enfantin : joues pleines, traits ronds, mâchoire pas
+            même esquissée. Peau claire, presque pâle, qui rougit vite au froid et brûle au
+            soleil sans jamais bronzer.
+          </p>
+          <p>
+            Cheveux <strong>châtain-roux</strong>, mi-longs, ébouriffés en permanence, avec des
+            mèches qui retombent devant les yeux et recouvrent les oreilles. Il les coupe
+            lui-même, aux ciseaux médicaux, et ça se voit.
+          </p>
+          <p>
+            Les yeux sont d'un <strong>rouge sombre</strong>, presque grenat, qu'on ne retrouve
+            nulle part ailleurs dans sa famille. Deux ou trois anciens du clan en ont fait des
+            gorges chaudes quand il était petit, puis on est passé à autre chose. Le regard est
+            fixe, tenu trop longtemps, un peu gênant.
+          </p>
+          <p>
+            Le long des avant-bras, la peau est marbrée de plaques plus claires et plus froides
+            que le reste, visibles à l'œil nu. C'est la seule chose sur lui qui trahisse le
+            Givre en plein jour.
+          </p>
+        </div>
+
+        <dl class="vitals">
+          <div><dt>Taille</dt><dd>1,41 m</dd></div>
+          <div><dt>Poids</dt><dd>32 kg</dd></div>
+          <div><dt>Groupe sanguin</dt><dd>AB−</dd></div>
+          <div><dt>Main directrice</dt><dd>Gauche</dd></div>
+          <div><dt>Température moyenne</dt><dd>35,4 °C</dd></div>
+          <div><dt>Sommeil</dt><dd>Irrégulier</dd></div>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="aptitudes rv">
+      <span class="label">Aptitudes</span>
+      <div class="phys-list" id="bars">
           <div class="bar-row frost" data-v="95"><div class="top"><span class="n">Contrôle du chakra</span><span class="g">Exceptionnel</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
           <div class="bar-row low" data-v="30"><div class="top"><span class="n">Réserves de chakra</span><span class="g">Très faibles</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
           <div class="bar-row low" data-v="22"><div class="top"><span class="n">Endurance en effort soutenu</span><span class="g">Minutes</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
@@ -1314,8 +1365,7 @@ footer .creds b{color:var(--givre);font-weight:500;}
           <div class="bar-row" data-v="60"><div class="top"><span class="n">Vitesse et esquive</span><span class="g">Correctes</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
           <div class="bar-row" data-v="75"><div class="top"><span class="n">Déplacement en sous-bois</span><span class="g">Bon</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
           <div class="bar-row" data-v="80"><div class="top"><span class="n">Résistance à la douleur</span><span class="g">Au-dessus de la moyenne</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
-          <div class="bar-row" data-v="65"><div class="top"><span class="n">Régénération passive Senju</span><span class="g">Compense en partie</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
-        </div>
+        <div class="bar-row" data-v="65"><div class="top"><span class="n">Régénération passive Senju</span><span class="g">Compense en partie</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
       </div>
     </div>
   </div>
